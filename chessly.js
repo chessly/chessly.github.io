@@ -189,11 +189,10 @@ function game_pieceSVG({
         }
         constructor() {
           super();
-          //this.setAttribute(___ELEMENT_IS___, piece_is);
+          this.setAttribute(___ELEMENT_IS___, piece_is);
         }
         setIMGsrc() {
           let parameters = parametersObject(this, {}, this.constructor.observedAttributes);
-          console.warn(21, parameters);
           this.src = game_pieceSVG(parameters);
         }
         show_piece_moves(from_square) {
@@ -699,6 +698,7 @@ customElements.define(
       });
       //once the pieces are on the board, calc underlying levels
       this.levelSquares.levelHTML();
+      this.showmoves();
     }
     game(nr) {
       this.fen = games[nr].fen;
@@ -757,4 +757,3 @@ let board = document.querySelector("game-board");
 board.fen = "4rrk1/1b2b2p/ppn5/3p1pnq/1P1N2p1/P1PB2P1/5PNP/R1BQ1RK1";
 //board.fen = '8/2R5/5q1k/3Q2N1/3p4/PP3pPP/5n1K/4r3';
 //board.add_board_piece("white-queen", "E4");
-//board.showmoves("D1");
