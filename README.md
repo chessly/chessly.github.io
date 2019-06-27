@@ -8,9 +8,8 @@
 
 # DISCLAIMER
 
-This project is NOT about Chess! 
-
-The topic of Chess was chosen for educational purposes to demonstrate W3C Standard Custom Elements, CSS Grid and Native JavaScript DOM performance
+The topic of Chess was chosen for educational purposes to demonstrate W3C Standard Custom Elements, CSS Grid and Native JavaScript DOM performance.  
+Implemented chess rules could be incorrect.
 
 # License: Unlicense
 
